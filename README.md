@@ -2,6 +2,8 @@
 
 **Fury Skater Gallery** is a custom WordPress plugin designed for roller derby leagues to showcase skaters and crew members in a team-based, filterable gallery. It features modal popups with bios, custom post types, taxonomy filtering, and dynamic styling based on team colors.
 
+Originally developed for [Rockstar Roller Derby](https://rockstarrollerderby.com) by skater Bi-Furious (Kipley Winn).
+
 ## Highlighted Features
 
 - Custom Post Type: Skater
