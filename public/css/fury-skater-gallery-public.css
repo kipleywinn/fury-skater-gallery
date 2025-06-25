@@ -243,3 +243,6 @@ body.no-scroll {
 div#dynamic-content p {
   clear: right;
 }
+div#dynamic-content img {
+  float:none;
+}
