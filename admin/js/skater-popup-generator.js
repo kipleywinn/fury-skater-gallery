@@ -94,19 +94,23 @@ if (team !== "Crew") {
     <h4>${combinedPositions}</h4>
   </div>
   <div class="mainbody">
-    <img src="${secondaryHeadshot}" alt="${skaterName}" class="skaterPic alignnone size-small">
-        <p>${nickname ? nickname : skaterName} has been playing roller derby since ${yearStarted || 'N/A'}${derbySpouse ? ` and ${p.possessive} derby spouse is ${derbySpouse}.` : '.'}</p>
+        <div class="parent-grid">
+    <div class="div2-grid"><img src="${secondaryHeadshot}" alt="${skaterName}" class="skaterPic alignnone size-small"></div>
+        <div class="div1-grid"><p>${nickname ? nickname : skaterName} has been playing roller derby since ${yearStarted || 'N/A'}${derbySpouse ? ` and ${p.possessive} derby spouse is ${derbySpouse}.` : '.'}</p>
 
     <p>A few of ${p.possessive} favorite things:</p>
     <ul>
         ${fav1 ? `<li>${fav1}</li>` : ''}
         ${fav2 ? `<li>${fav2}</li>` : ''}
         ${fav3 ? `<li>${fav3}</li>` : ''}
-    </ul>
+    </ul></div>
+        <div class="div3-grid">
     <div id="dynamic-content">
       ${careerInfo ? `<p><strong>Some cool shit about ${nickname ? nickname : skaterName}:</strong></p><blockquote>${careerInfo}</blockquote>` : ''}
       ${dynamicContent}
     </div>
+      </div>
+      </div>
   </div>
         </div>`
     } else {
