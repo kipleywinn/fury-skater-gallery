@@ -104,7 +104,9 @@ if (team !== "Crew") {
         ${fav3 ? `<li>${fav3}</li>` : ''}
     </ul>
     ${careerInfo ? `<p><strong>Some cool shit about ${nickname ? nickname : skaterName}:</strong></p><blockquote>${careerInfo}</blockquote>` : ''}
-    ${dynamicContent}
+    <div id="dynamic-content">
+      ${dynamicContent}
+    </div>
   </div>
         </div>`
     } else {
