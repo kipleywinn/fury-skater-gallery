@@ -7,6 +7,17 @@
   --opacity: 0.6;
 }
 
+.parent-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(2, max-content);
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+}
+.div1-grid { grid-area: 1 / 1 / 2 / 2; align-self: center; }
+.div2-grid { grid-area: 1 / 2 / 2 / 3; align-self: center; }
+.div3-grid { grid-area: 2 / 1 / 6 / 3; align-self: start; }
+
 .fury-skater-gallery {
   max-width: 840px;
   margin: 0 auto;
@@ -210,8 +221,8 @@ body.no-scroll {
     max-height: 185px;
   }
   .skater-bio-popup .mainbody img.skaterPic {
-    max-width:40%;
-    float: right;
+    /*max-width:40%;
+    float: right;*/
     border-radius: 10px;
   }
   .skater-bio-popup ul {
