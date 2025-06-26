@@ -188,6 +188,7 @@
   /*color: #ffffff;*/
   color: var(--modal-text-color);
   cursor: pointer;
+  padding: 5px;
 }
 
 /* Prevent background scroll when modal is open */
