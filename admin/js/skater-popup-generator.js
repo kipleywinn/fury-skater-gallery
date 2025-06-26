@@ -65,7 +65,7 @@ const optionalQuestions = [
   { label: "Did you pick your derby name or did your derby name pick you?", field: 'did_you_pick_your_derby_name_or_did_your_derby_name_pick_you' },
   { label: "What is your most useless talent?", field: 'what_is_your_most_useless_talent' },
   { label: "Is a hot dog a sandwich?", field: 'is_a_hot_dog_a_sandwich' },
-  { label: "Would you rather fight 100 duck-sized horses or 1 horse-sized duck?", field: 'would_you_rather_fight_100_duck-sized_horses_or_1_horse_sized_duck' },
+  { label: "Would you rather fight 100 duck-sized horses or 1 horse-sized duck?", field: 'would_you_rather_fight_100_duck-sized_horses_or_1_horse-sized_duck' },
   { label: "When did you attend your first concert and who did you see?", field: 'when_did_you_attend_your_first_concert_and_who_did_you_see' },
   { label: "If your pet could talk, what do you think they might say about you?", field: 'if_your_pet_could_talk_what_do_you_think_they_might_say_about_you' },
   { label: "Do you collect anything?", field: 'do_you_collect_anything' },
