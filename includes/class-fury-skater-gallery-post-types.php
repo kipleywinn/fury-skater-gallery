@@ -197,17 +197,18 @@ public function add_team_logo_field( $term ) {
                 'filter_items_list'   => __( 'Filter skaters list', 'fury-skater-gallery' ),
             );
             $args = array(
-                'labels'              => $labels,
-                'public'              => true, // Not intended for direct public viewing as single posts
-                'publicly_queryable'  => false,
-                'show_ui'             => true, // Show in the admin interface
-                'show_in_menu'        => 'fury-skater-gallery', // show under plugin menu, set to true to show as main admin menu item instead
-                'query_var'           => true,
-                'rewrite'             => array( 'slug' => 'skater' ),
-                'capability_type'     => 'post',
-                'hierarchical'        => false,
-                'supports'            => array( 'title', 'thumbnail' ), // 'title' for skater name, 'thumbnail' for headshot
-                'menu_icon'           => 'dashicons-users', // Choose an appropriate dashicon
+                'labels'             => $labels,
+                'public'             => true,
+                'publicly_queryable' => false,
+                'show_ui'            => true,
+                'show_in_menu'       => 'fury-skater-gallery',
+                'query_var'          => true,
+                'rewrite'            => array( 'slug' => 'skater' ),
+                'capability_type'    => 'post',
+                'hierarchical'       => false,
+                'show_in_rest'       => true,   // add this
+                'supports'           => array( 'title', 'thumbnail', 'custom-fields' ),  // add custom-fields
+                'menu_icon'          => 'dashicons-users',
             );
             register_post_type( 'skater', $args );
         }
